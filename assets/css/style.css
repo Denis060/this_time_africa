@@ -1,0 +1,250 @@
+/* Sticky Footer Layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+/* === General === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* === Hero Banner === */
+section.bg-dark.text-white {
+  background: linear-gradient(to right, #1a1a1a, #222);
+  color: white;
+}
+
+section.bg-dark.text-white .btn-warning {
+  font-weight: bold;
+  padding: 12px 25px;
+  font-size: 18px;
+}
+
+/* === SEGMENT === */
+
+    .segment-card {
+      border-left: 4px solid #0d6efd;
+      background: #f8f9fa;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: .5rem;
+      display: flex;
+      align-items: center;
+      transition: all 0.2s ease-in-out;
+    }
+    .segment-card:hover {
+      background-color: #e2e6ea;
+      text-decoration: none;
+    }
+    .segment-card img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      margin-right: 15px;
+      border-radius: 6px;
+    }
+    .segment-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+/* === Card Styles === */
+.card {
+  border: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* === About Section === */
+.about-img {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 300px;
+}
+
+blockquote {
+  border-left: 5px solid #ffc107;
+  padding-left: 15px;
+  font-style: italic;
+  color: #555;
+}
+
+/* === Buttons === */
+.btn {
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+  color: white;
+}
+
+/* === CTA Section === */
+section.bg-dark.text-white h3 {
+  font-size: 28px;
+}
+
+section.bg-dark.text-white p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .about-img {
+    margin-bottom: 20px;
+  }
+
+  .card-img-top {
+    height: 160px;
+  }
+}
+
+
+/* get involve */
+.get-card {
+      background: #eef5ff;
+      padding: 1.5rem;
+      border-left: 5px solid #0d6efd;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* === Episodes Page === */
+.episode-card iframe {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.episode-card .card-body {
+  padding: 1rem;
+  background: #fff;
+}
+
+.episode-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.episode-card .card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.episode-card .card-footer {
+  font-size: 0.8rem;
+  background-color: #f9f9f9;
+}
+
+
+/* === New HERO=== */
+#heroBanner {
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+#heroBanner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#heroBanner .overlay {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Slightly darker for better contrast */
+  z-index: 1;
+}
+
+#heroBanner .container {
+  z-index: 2;
+  position: relative;
+}
+
+#heroBanner h1,
+#heroBanner p {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  #heroBanner {
+    height: 70vh;
+    padding: 2rem 1rem;
+  }
+
+  #heroBanner h1 {
+    font-size: 2rem;
+  }
+
+  #heroBanner p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
